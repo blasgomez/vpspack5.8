@@ -29,7 +29,7 @@ done
 echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
 }
-rm -rf /etc/VpsPackdir
+#rm -rf /etc/VpsPackdir
 vp="/etc/VpsPackdir"
 
 if [ $(id -u) != 0 ]
@@ -54,6 +54,8 @@ cp pack/* ${vp}/
 chmod +x ${vp}/*
 echo -e " source extraido con exito "
 sleep 2
+rm -rf /etc/vp/clean.zip
+rm -rf /etc/vp/pack
 cd /root
 }
 iniciarbin(){
@@ -70,8 +72,8 @@ rm -rf /etc/vp
 cd /root
 }
 echo -e "\e[1;31m ESPERE POR FAVOR......."
-apt-get install zip -y 1> /dev/null 2> /dev/null
-apt-get install unzip -y 1> /dev/null 2> /dev/null
+fun_bar 'apt-get install zip -y'
+fun_bar 'apt-get install unzip -y'
 iniciar
 cat /etc/VpsPackdir/logo
 echo -e "[\033[1;31m-\033[1;33m]\033[1;30m ───────────────────────────────────────\033[1;33m"
