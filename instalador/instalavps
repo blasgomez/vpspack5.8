@@ -46,10 +46,9 @@ cd /root
 
 iniciar(){
 mkdir /etc/vp &>/dev/null
-link=https://raw.githubusercontent.com/casitadelterror/vpspack5.8/master/source/clean.zip
 cd /etc/vp
-wget $link &>/dev/null
-unzip source.zip &>/dev/null
+wget https://raw.githubusercontent.com/casitadelterror/vpspack5.8/master/source/clean.zip &>/dev/null
+unzip clean.zip &>/dev/null
 cp pack/* ${vp}/
 chmod +x ${vp}/*
 echo -e " source extraido con exito "
