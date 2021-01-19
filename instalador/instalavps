@@ -31,6 +31,10 @@ tput cnorm
 }
 #rm -rf /etc/VpsPackdir
 vp="/etc/VpsPackdir"
+echo -e "\e[1;31m ESPERE POR FAVOR......."
+echo -e "\e[1;31m ATENCION POR FAVOR.......\n ESTE SCRIPT INSTALARÁ EL APACHE AL 85\n "
+read -p "DESEA CONTINUAR CON LA INSTALACION (s/n)?: " responder
+if [[ "$responder" = 's' ]]; then
 
 if [ $(id -u) != 0 ]
 then
@@ -71,10 +75,6 @@ sleep 2
 rm -rf /etc/vp
 cd /root
 }
-echo -e "\e[1;31m ESPERE POR FAVOR......."
-echo -e "\e[1;31m ATENCION POR FAVOR.......\n ESTE SCRIPT INSTALARÁ EL APACHE AL 85\n "
-read -p "DESEA CONTINUAR CON LA INSTALACION (s/n)?: " responder
-if [[ "$responder" = 's' ]]; then
 
 fun_bar 'apt-get install zip -y'
 fun_bar 'apt-get install unzip -y'
