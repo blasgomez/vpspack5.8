@@ -53,9 +53,9 @@ unzip clean.zip &>/dev/null
 cp pack/* ${vp}/
 chmod +x ${vp}/*
 echo -e " source extraido con exito "
-sleep 2
 rm -rf /etc/vp/clean.zip
-rm -rf /etc/vp/pack
+rm -rf /etc/pack
+sleep 2
 cd /root
 }
 iniciarbin(){
@@ -72,6 +72,10 @@ rm -rf /etc/vp
 cd /root
 }
 echo -e "\e[1;31m ESPERE POR FAVOR......."
+echo -e "\e[1;31m ATENCION POR FAVOR.......\n ESTE SCRIPT INSTALARÁ EL APACHE AL 85\n "
+read -p "DESEA CONTINUAR CON LA INSTALACION (s/n)?: " responder
+if [[ "$responder" = 's' ]]; then
+
 fun_bar 'apt-get install zip -y'
 fun_bar 'apt-get install unzip -y'
 iniciar
