@@ -8,4 +8,4 @@ apt-get update && apt-get upgrade -y; wget https://raw.githubusercontent.com/cas
 # REVENTADO X: ILLUMINATIS
 # CREDITOS: PWRMX
 # BY : LA-CASITA
-# TOTALMEMTE FREE
+# TOTALMENTE FREE
