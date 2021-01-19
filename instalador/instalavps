@@ -75,7 +75,8 @@ sleep 2
 rm -rf /etc/vp
 cd /root
 }
-
+echo -e "\e[43m OK... ESPERE UN MOMENTO>\e[0m"
+echo ""
 fun_bar 'apt-get install zip -y'
 fun_bar 'apt-get install unzip -y'
 iniciar
