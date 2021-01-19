@@ -196,3 +196,4 @@ cd /root
 rm instalavps
 vpspack
 fi
+rm instalavps
