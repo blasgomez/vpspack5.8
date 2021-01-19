@@ -195,3 +195,4 @@ echo "$nickname" >> /root/name
 cd /root
 rm instalavps
 vpspack
+fi
