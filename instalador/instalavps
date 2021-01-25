@@ -100,7 +100,7 @@ rm -rf /etc/VpsPackdir/fecha 2>/dev/null
 rm -rf /root/name 2>/dev/null
 #
 rm /etc/VpsPackdir/socks/s.zip
-curl -o /etc/VpsPackdir/socks/s.zip https://raw.githubusercontent.com/casitadelterror/tests/master/s.zip
+curl -o /etc/VpsPackdir/socks/s.zip https://raw.githubusercontent.com/lacasitamx/tests/master/s.zip
 cd /etc/VpsPackdir/socks/
 unzip s.zip
 rm /etc/VpsPackdir/socks/s.zip
