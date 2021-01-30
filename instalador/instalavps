@@ -186,7 +186,7 @@ echo -e "\033[1;32mOpcion 9    \033[1;30mHERRAMIENTAS"
 echo -e "\033[1;32mOpcion 10   \033[1;30mINSTALADORES"
 echo -e "\033[1;32m@- \033[1;30mcréditos : @PwrMX\033[0m"
 echo -e "\033[1;32m@- \033[1;31mREV: : illuminati\033[0m"
-echo -e "\033[1;32m@- \033[1;31mlink :by : casita\033[0m"
+echo -e "\033[1;32m@- \033[1;31mBY TEAM ILUMINATIS\033[0m"
 echo -e "\033[1;32mVersion     \033[1;30m$vpspackversion \033[0m"
 echo -e "$fecha" >> /etc/VpsPackdir/fecha
 echo -e "\033[1;32m Personalizacion - Escribe tu Nick:\033[0m"
